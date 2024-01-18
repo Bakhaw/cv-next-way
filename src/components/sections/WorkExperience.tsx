@@ -43,7 +43,7 @@ export const WorkExperience = () => {
                         ))}
                       </span>
                     </div>
-                    <div className="w-full text-right text-sm tabular-nums text-gray-500">
+                    <div className="w-full text-right font-mono text-sm tabular-nums text-gray-500">
                       {work.start} - {work.end}
                     </div>
                   </div>

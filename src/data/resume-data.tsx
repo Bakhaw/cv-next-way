@@ -1,4 +1,10 @@
+import { yearsDiff } from "@/lib/utils";
+
 import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons";
+
+const baseDate = new Date("2019").toString();
+const now = new Date(Date.now()).toString();
+const exeperienceInYears = yearsDiff(baseDate, now);
 
 export const RESUME_DATA = {
   name: "Faïssal Hattou",
@@ -7,11 +13,10 @@ export const RESUME_DATA = {
   locationLink: "https://www.google.com/maps/place/Paris",
   about:
     "Développeur axé sur la création de produits performants, passionné du web 🧑‍💻",
-  summary:
-    "Développeur React/Next.js depuis 5 ans, j’ai accompagné plusieurs clients et développé de nombreux projets innovants sur le web. Autodidacte, je m’adapte facilement et touche à tout. Mon autonomie me permet de m’intégrer rapidement au sein d’une nouvelle équipe. Le web et ses nouvelles technologies me passionnent, je m’en sers pour concevoir des interfaces modernes et centrées sur l’expérience utilisateur.",
+  summary: `Développeur React/Next.js depuis ${exeperienceInYears} ans, j'ai accompagné plusieurs clients et développé de nombreux projets innovants sur le web. Autodidacte, je m'adapte facilement et touche à tout. Mon autonomie me permet de m'intégrer rapidement au sein d'une nouvelle équipe. Le web et ses nouvelles technologies me passionnent, je m'en sers pour concevoir des interfaces modernes et centrées sur l'expérience utilisateur.`,
   avatarUrl:
     "https://media.licdn.com/dms/image/D4E03AQHYC435Asb31A/profile-displayphoto-shrink_200_200/0/1685728239094?e=2147483647&v=beta&t=NWGb_NjCDwNnpHj1i0_XkYLTEjlRpiVEFC6ldVOjwVY",
-  personalWebsiteUrl: "https://jarocki.me",
+  personalWebsiteUrl: "https://fh-universe.netlify.app/",
   contact: {
     email: "faissal.hattou@gmail.com",
     tel: "+33634161866",
@@ -27,8 +32,8 @@ export const RESUME_DATA = {
         icon: LinkedInIcon,
       },
       {
-        name: "X",
-        url: "https://x.com/Faissal_Hattou",
+        name: "Twitter",
+        url: "https://twitter.com/Faissal_Hattou",
         icon: XIcon,
       },
     ],
