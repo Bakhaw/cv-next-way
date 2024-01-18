@@ -10,6 +10,7 @@ import {
   Summary,
   WorkExperience,
 } from "@/components/sections";
+import GeneratePdf from "@/components/generate-pdf";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -18,15 +19,18 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12">
-      <section className="mx-auto w-full max-w-3xl space-y-8 bg-white print:space-y-6">
-        <Personal />
-        <Summary />
-        <WorkExperience />
-        <Education />
-      </section>
+    <>
+      <main className="container relative mx-auto scroll-my-12 overflow-auto p-4 md:p-16 print:p-12">
+        <section className="mx-auto w-full max-w-3xl space-y-8 bg-white print:space-y-6">
+          <Personal />
+          <Summary />
+          <WorkExperience />
+          <Education />
+        </section>
 
-      <CommandMenu
+        <GeneratePdf />
+
+        {/* <CommandMenu
         links={[
           {
             url: RESUME_DATA.personalWebsiteUrl,
@@ -37,7 +41,8 @@ export default function Page() {
             title: socialMediaLink.name,
           })),
         ]}
-      />
-    </main>
+      /> */}
+      </main>
+    </>
   );
 }

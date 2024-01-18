@@ -58,11 +58,13 @@ export const WorkExperience = () => {
                     ))}
                   </ul>
 
-                  <div className="flex flex-wrap gap-1">
+                  <ul className="flex flex-wrap gap-1">
                     {work.skills.map((skill) => (
-                      <Badge key={skill}>{skill}</Badge>
+                      <li key={skill}>
+                        <Badge className="h-8 leading-3">{skill}</Badge>
+                      </li>
                     ))}
-                  </div>
+                  </ul>
                 </CardContent>
               </Card>
             </li>

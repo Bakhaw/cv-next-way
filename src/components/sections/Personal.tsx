@@ -66,7 +66,7 @@ export const Personal = () => {
         </div>
       </div>
 
-      <Avatar className="size-28">
+      <Avatar className="avatar size-28">
         <AvatarImage alt={RESUME_DATA.name} src={RESUME_DATA.avatarUrl} />
         <AvatarFallback>{RESUME_DATA.initials}</AvatarFallback>
       </Avatar>
