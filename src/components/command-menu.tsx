@@ -20,6 +20,7 @@ interface Props {
 
 export const CommandMenu = ({ links }: Props) => {
   const [open, setOpen] = React.useState(false);
+  const [isMac, setIsMac] = React.useState(false);
 
   React.useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -33,17 +34,19 @@ export const CommandMenu = ({ links }: Props) => {
     return () => document.removeEventListener("keydown", down);
   }, []);
 
-  const isMac =
-    typeof window !== "undefined"
-      ? navigator.userAgent.toUpperCase().indexOf("MAC") >= 0
-      : false;
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const isMac = navigator.userAgent.toUpperCase().indexOf("MAC") >= 0;
+      setIsMac(isMac);
+    }
+  }, []);
 
   return (
     <>
       <p className="fixed bottom-0 left-0 right-0 hidden border-t border-t-muted bg-background p-1 text-center text-sm text-muted-foreground xl:block print:hidden">
         Appuyez sur{" "}
-        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
-          <span className="text-xs">{isMac ? "⌘" : "CTRL"} J</span>
+        <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-sm font-medium text-muted-foreground opacity-100">
+          {isMac ? <span className="text-lg">⌘</span> : <>CTRL</>} J
         </kbd>{" "}
         pour ouvrir le menu des commandes
       </p>
