@@ -16,10 +16,12 @@ export const WorkExperience = () => {
             <li key={`${work.company}-${index}`}>
               <Card className="space-y-2">
                 <CardHeader>
-                  <div className="flex items-start justify-between gap-x-2 text-base">
+                  <div className="flex flex-col items-start justify-between gap-x-2 text-base sm:flex-row">
                     <div className="inline-flex w-full items-start justify-start gap-2 font-semibold leading-none">
                       <div className="space-y-1">
-                        <h4 className="font-mono leading-none">{work.title}</h4>
+                        <h4 className="shrink-0 break-keep leading-none">
+                          {work.title}
+                        </h4>
                         <div className="flex items-center gap-x-1">
                           <a
                             className="text-sm font-light hover:underline"
@@ -43,7 +45,7 @@ export const WorkExperience = () => {
                         ))}
                       </span>
                     </div>
-                    <div className="w-full text-right font-mono text-sm tabular-nums text-gray-500">
+                    <div className="w-full font-mono text-xs tabular-nums text-gray-500 sm:text-right sm:text-sm">
                       {work.start} - {work.end}
                     </div>
                   </div>
