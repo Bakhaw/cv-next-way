@@ -16,7 +16,7 @@ export const Education = () => {
                   {education.school}
                 </h3>
 
-                <div className="text-sm tabular-nums text-gray-500">
+                <div className="text-xs tabular-nums text-gray-500 sm:text-sm">
                   {education.start} - {education.end}
                 </div>
               </div>
