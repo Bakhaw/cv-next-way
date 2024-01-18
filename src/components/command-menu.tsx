@@ -69,7 +69,7 @@ export const CommandMenu = ({ links }: Props) => {
               <span>Imprimer</span>
             </CommandItem>
           </CommandGroup>
-          <CommandGroup heading="Links">
+          <CommandGroup heading="Liens">
             {links.map(({ url, title }) => (
               <CommandItem
                 key={url}
