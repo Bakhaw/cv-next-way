@@ -8,6 +8,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import {
   Education,
   Personal,
+  Projects,
   Summary,
   WorkExperience,
 } from "@/components/sections";
@@ -29,6 +30,8 @@ export default function Page() {
         <Summary />
         <WorkExperience />
         <Education />
+
+        <Projects />
       </section>
 
       <CommandMenu
