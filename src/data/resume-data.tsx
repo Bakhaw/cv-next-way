@@ -227,8 +227,7 @@ export const RESUME_DATA = {
         "React Query",
         "Spotify API",
       ],
-      description:
-        "Explorez de nouvelles fonctionnalités et une expérience utilisateur améliorée",
+      description: "Explore new features and improved user experience",
       link: {
         href: "https://github.com/Bakhaw/spotify",
       },
@@ -254,35 +253,6 @@ export const RESUME_DATA = {
       description: "Lyrics finder. Built with Genius API",
       link: {
         href: "https://fh-genius.netlify.app/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
       },
     },
   ],
