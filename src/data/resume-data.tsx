@@ -218,9 +218,24 @@ export const RESUME_DATA = {
   ],
   projects: [
     {
+      title: "Wrappped",
+      techStack: [
+        "TypeScript",
+        "Next.js",
+        "Tailwind",
+        "React Query",
+        "Prisma",
+        "Supabase",
+        "Spotify API",
+      ],
+      description: "Wrap your favorite music",
+      link: {
+        href: "https://wrappped.vercel.app/",
+      },
+    },
+    {
       title: "Spotify",
       techStack: [
-        "Side Project",
         "TypeScript",
         "Next.js",
         "Tailwind",
@@ -234,13 +249,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Dark Twitter",
-      techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Tailwind",
-        "Generative AI",
-      ],
+      techStack: ["TypeScript", "Next.js", "Tailwind", "Generative AI"],
       description:
         "Dark Twitter with multiple worlds. Posts and bios are using Generative AI",
       link: {
@@ -249,7 +258,7 @@ export const RESUME_DATA = {
     },
     {
       title: "Genius",
-      techStack: ["Side Project", "React", "SASS", "Genius API"],
+      techStack: ["React", "SASS", "Genius API"],
       description: "Lyrics finder. Built with Genius API",
       link: {
         href: "https://fh-genius.netlify.app/",
